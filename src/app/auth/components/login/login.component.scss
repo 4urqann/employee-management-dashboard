@@ -1,5 +1,5 @@
 .backg {
-    background-image: url("https://img.freepik.com/free-vector/realistic-background-futuristic-style_23-2149129125.jpg");
+    background-image: url("https://images.unsplash.com/photo-1712916666137-0ca605eeb88c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3");
     background-repeat: no-repeat; 
     background-size: cover;
     height: 100%;
@@ -10,8 +10,7 @@
 
 mat-card {
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.422);
-    
+    background-color: rgba(219, 219, 219, 0.758);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +33,7 @@ mat-card {
 
 .login-button {
     background-color: rgba(0, 30, 255, 0.47);
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 15px;
     position: relative;
     top: 45px;
@@ -43,6 +42,10 @@ mat-card {
 .signup-button {
     color: rgb(0, 47, 255);
     text-decoration: underline;
+}
+
+.signup-button:hover {
+    background-color: rgba(0, 47, 255, 0.34);
 }
 
 .signupdiv {

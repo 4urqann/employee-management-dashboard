@@ -15,10 +15,6 @@ export class EmpTileComponent {
 
   @Input() currentUser!: User;
 
-  addEmp() {
-    this.router.navigate(['signup'])
-  }
-
   updateEmp(user: User) {
     this.empService.editEmp(user);
   }

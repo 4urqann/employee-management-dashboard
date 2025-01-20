@@ -2,11 +2,11 @@
 
     <div class="tile">
 
-        <div class="" style="display: flex; justify-content: flex-start;">
-            <p>{{currentUser.name}}</p>
+        <div class="">
+            <p>{{currentUser.id}}</p>
         </div>
-        <div class="" style="display: flex; justify-content: flex-start;">
-            <p>{{currentUser.username}}</p>
+        <div class="">
+            <p>{{currentUser.name}}</p>
         </div>
         <div class="">
             <p>{{currentUser.username}}</p>
@@ -16,15 +16,11 @@
         </div>
         <section style="display: flex; align-items: center;">
 
-
             <div class="">
-                <button (click)="addEmp()" >+</button>
+                <button (click)="updateEmp(currentUser)"><i class="fa-solid fa-user-pen"></i></button>
             </div>
             <div class="">
-                <button (click)="updateEmp(currentUser)" >*</button>
-            </div>
-            <div class="">
-                <button (click)="removeEmp(currentUser)">-</button>
+                <button (click)="removeEmp(currentUser)"><i class="fa-solid fa-trash-can"></i></button>
             </div>
 
         </section>

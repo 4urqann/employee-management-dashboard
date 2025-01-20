@@ -1,5 +1,7 @@
 p {
     margin: 0;
+    font-size: 1.59rem;
+    font-weight: 550;
 }
 
 .tile {
@@ -7,4 +9,5 @@ p {
     justify-content: space-between;
     align-items: center;
     border: solid 1px black;
+    padding: 5px;
 }

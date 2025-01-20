@@ -18,7 +18,7 @@ export class LoginComponent {
   baseURL: string = "http://localhost:3000/users";
 
   loginForm: FormGroup = new FormGroup({
-    "username": new FormControl(null, Validators.required),
+    "username": new FormControl(null, [Validators.required, Validators.email]),
     "password": new FormControl(null, Validators.required)
   });
 

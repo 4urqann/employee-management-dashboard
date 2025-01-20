@@ -14,7 +14,7 @@ export class FormComponent implements OnInit{
     private router: Router
   ) {}
 
-    openEmp!: User;
+    openEmp = this.empService.employee;
     employees!: User[];
 
     departments = ["IT", "HR", "Finance"];
@@ -28,6 +28,7 @@ export class FormComponent implements OnInit{
       //   this.getEmp(params.id);
       //   console.log(params);
       // })
+      this.getEmp();
     }
 
     getEmp() {

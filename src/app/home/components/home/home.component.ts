@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { EmployeeService } from '../../employee.service';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,8 @@ import { FormControl } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
   constructor(private http: HttpClient,
-    public empService: EmployeeService
+    public empService: EmployeeService,
+    public router: Router
   ) { }
 
   baseURL: string = "http://localhost:3000/users";
@@ -45,7 +47,10 @@ export class HomeComponent implements OnInit {
 
     console.log("Home Loaded!!");
 
+  }
 
+  addEmp() {
+    this.router.navigate(['signup'])
   }
 
 }

@@ -33,8 +33,10 @@ export class EmployeeService {
   }
 
   editEmp(user: User) {
+    console.log("edit called");
+    
     // this.router.navigate(['home', 'edit', id]);
-    this.router.navigate(['home/edit'])
+    this.router.navigate(['home/edit']);
     this.employee = user;
     
   }
