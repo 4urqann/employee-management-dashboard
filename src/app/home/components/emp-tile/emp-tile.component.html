@@ -1,0 +1,33 @@
+<div class="container">
+
+    <div class="tile">
+
+        <div class="" style="display: flex; justify-content: flex-start;">
+            <p>{{currentUser.name}}</p>
+        </div>
+        <div class="" style="display: flex; justify-content: flex-start;">
+            <p>{{currentUser.username}}</p>
+        </div>
+        <div class="">
+            <p>{{currentUser.username}}</p>
+        </div>
+        <div class="">
+            <p>{{currentUser.department}}</p>
+        </div>
+        <section style="display: flex; align-items: center;">
+
+
+            <div class="">
+                <button (click)="addEmp()" >+</button>
+            </div>
+            <div class="">
+                <button (click)="updateEmp(currentUser)" >*</button>
+            </div>
+            <div class="">
+                <button (click)="removeEmp(currentUser)">-</button>
+            </div>
+
+        </section>
+
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="d-flex ">
+    
+</div>
+
+<div style="height: 100%; display: flex; flex-flow: column; justify-content:flex-start; align-items: center;">
+    <form action="">
+        <input class="searchbar" type="text" placeholder="filter..." [formControl]="filterControl">
+    </form>
+    <app-emp-tile *ngFor="let user of filteredUsers" [currentUser]="user"></app-emp-tile>
+</div>

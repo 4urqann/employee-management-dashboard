@@ -1,0 +1,10 @@
+p {
+    margin: 0;
+}
+
+.tile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+}

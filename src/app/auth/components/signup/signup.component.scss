@@ -1,0 +1,56 @@
+.backg {
+    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/futuristic-modern-orange-and-blue-lines-background-free-photo.jpg?w=2210&quality=70");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-card {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.422);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 3.6px solid orange;
+}
+
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.inputField {
+    position: relative;
+    top: 30px;
+}
+
+.button {
+    display: flex;
+}
+
+.login-button {
+    background-color: rgba(0, 30, 255, 0.47);
+    font-size: 1rem;
+    padding: 15px;
+    position: relative;
+    top: 45px;
+}
+
+.signup-button {
+    color: rgb(0, 47, 255);
+    text-decoration: underline;
+}
+
+.signupdiv {
+    position: relative;
+    top: 70px;
+}
+
+//   form {
+//     border: 1px solid black;
+//     padding: 50px;
+//   }

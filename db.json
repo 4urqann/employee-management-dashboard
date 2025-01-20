@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Furqan Mohammed Khan",
+      "username": "furqan@gmail.com",
+      "password": "furqannn",
+      "department": "IT"
+    },
+    {
+      "id": "2",
+      "name": "Rehan Mohammed Khan",
+      "username": "rehan@gmail.com",
+      "password": "rehannn",
+      "department": "IT"
+    },
+    {
+      "id": "3",
+      "name": "Faraz Mohammed Khan",
+      "username": "faraz@gmail.com",
+      "password": "farazzz",
+      "department": "IT"
+    },
+    {
+      "id": "4",
+      "name": "Ali Syed",
+      "username": "Ali@gmail.com",
+      "password": "Aliiiiii",
+      "department": "Finance"
+    },
+    {
+      "id": "5",
+      "name": "Faiz Mohammed Khan",
+      "username": "faiz@gmail.com",
+      "password": "faizzz",
+      "department": "HR"
+    },
+    {
+      "id": "6",
+      "name": "Roushan Syed",
+      "username": "roushan@gmail.com",
+      "password": "roushannn",
+      "department": "Finance"
+    },
+    {
+      "id": "7",
+      "name": "Adnan Mohammed",
+      "username": "adnan@gmail.com",
+      "password": "adnannn",
+      "department": "Finance"
+    },
+    {
+      "id": "8",
+      "name": "Rayyan",
+      "username": "rayyan@gmail.com",
+      "password": "rayyannn",
+      "department": "IT"
+    },
+    {
+      "id": "9",
+      "name": "Abdal Aziz",
+      "username": "aziz@gmail.com",
+      "password": "azizzzzz",
+      "department": "HR"
+    },
+    {
+      "id": "10",
+      "name": "Ayaz Khan",
+      "username": "ayaz@gmail.com",
+      "password": "ayazzzzzz",
+      "department": "Finance"
+    }
+  ]
+}

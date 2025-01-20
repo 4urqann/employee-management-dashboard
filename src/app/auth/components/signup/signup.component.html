@@ -1,0 +1,71 @@
+
+<div class="backg vh-100 d-flex justify-content-center align-items-center ">
+
+    <mat-card  class="d-flex justify-content-center align-items-center">
+        
+        <mat-card-title  class="d-flex justify-content-center">
+            <h4 class="card-title">Signup</h4>
+        </mat-card-title>
+        
+        <mat-card-content>
+            <form [formGroup]="signupForm" (ngSubmit)="submit()">
+                <div class="inputField">
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput type="text" placeholder="Name" formControlName="name">
+                    </mat-form-field>
+                </div>
+                <div class="inputField">
+                    <mat-form-field>
+                        <mat-label>Username</mat-label>
+                        <input matInput type="text" placeholder="Username" formControlName="username">
+                    </mat-form-field>
+                </div>
+
+                <div *ngIf="signupForm.value.username?.touched && signupForm.value.username?.invalid">
+                    <small *ngIf="signupForm.value.username?.errors?.['required']" class="text-danger">
+                        username is mandatory
+                    </small>
+                    <br>
+                    <small *ngIf="signupForm.value.username?.errors?.['minlength']" class="text-danger">
+                        username should contain atleast 6 letters
+                    </small>
+                </div>
+
+                <div class="inputField">
+                    <mat-form-field>
+                        <input matInput type="password" placeholder="password" formControlName="password">
+                    </mat-form-field>
+                </div>
+
+                <div class="inputField">
+                    <mat-form-field>
+                        <mat-label>Gender</mat-label>
+                        <mat-select>
+                            <mat-option formControlName="department" *ngFor="let department of departments" value="department">
+                                {{ department }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                
+                <div class="button">
+                    <div>
+                        <button class="login-button" [disabled]="signupForm.invalid" mat-button
+                            type="submit">Signup</button>
+                    </div>
+                    <!-- <div class="signup-button">
+                        <button routerLink="/signup" mat-button type="button">Signup</button>
+                    </div> -->
+                </div>
+                <div class="signupdiv">
+                    <p>Already have an account?<button class="signup-button" routerLink="" mat-button type="button">Login</button></p>
+                </div>
+            </form>
+            
+        </mat-card-content>
+
+    </mat-card>
+</div>
+
+
