@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "id": "1",
       "name": "Furqan Mohammed Khan",
       "username": "furqan@gmail.com",
       "password": "furqannn",
-      "department": "IT"
+      "department": "IT",
+      "id": "1"
     },
     {
       "id": "2",
@@ -69,6 +69,27 @@
       "username": "ayaz@gmail.com",
       "password": "ayazzzzzz",
       "department": "Finance"
+    },
+    {
+      "id": "d117",
+      "name": "habeeb",
+      "username": "shaik@GMAIL.COM",
+      "password": "test212312222",
+      "department": "department"
+    },
+    {
+      "id": "4308",
+      "name": "Furqan Mohammed Khan",
+      "username": "furqan@gmail.com",
+      "password": "furqannnn",
+      "department": "department"
+    },
+    {
+      "name": "Vijaya Jyothi",
+      "username": "vijaya123@gmail.com",
+      "password": "vijaya123",
+      "department": "HR",
+      "id": "98fa"
     }
   ]
 }

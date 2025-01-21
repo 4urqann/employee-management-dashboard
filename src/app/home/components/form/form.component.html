@@ -5,7 +5,7 @@
     <mat-card  class="d-flex justify-content-center align-items-center">
         
         <mat-card-title  class="d-flex justify-content-center">
-            <h4 class="card-title">Signup</h4>
+            <h4 class="card-title">Edit Info</h4>
         </mat-card-title>
         
         <mat-card-content>
@@ -23,12 +23,12 @@
                     </mat-form-field>
                 </div>
 
-                <div *ngIf="updateForm.value.username?.touched && updateForm.value.username?.invalid">
-                    <small *ngIf="updateForm.value.username?.errors?.['required']" class="text-danger">
+                <div *ngIf="updateForm?.value?.username?.touched && updateForm?.value?.username?.invalid">
+                    <small *ngIf="updateForm?.value?.username?.errors?.['required']" class="text-danger">
                         username is mandatory
                     </small>
                     <br>
-                    <small *ngIf="updateForm.value.username?.errors?.['minlength']" class="text-danger">
+                    <small *ngIf="updateForm?.value?.username?.errors?.['minlength']" class="text-danger">
                         username should contain atleast 6 letters
                     </small>
                 </div>
@@ -41,9 +41,9 @@
 
                 <div class="inputField">
                     <mat-form-field>
-                        <mat-label>Gender</mat-label>
-                        <mat-select>
-                            <mat-option formControlName="department" *ngFor="let department of departments" value="department">
+                        <mat-label>Department</mat-label>
+                        <mat-select formControlName="department">
+                            <mat-option *ngFor="let department of departments" [value]="department">
                                 {{ department }}
                             </mat-option>
                         </mat-select>

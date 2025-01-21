@@ -7,11 +7,11 @@
     style="display: flex; margin: 60px;">
 
         <form action="">
-            <input class="searchbar" type="text" placeholder="filter..." [formControl]="filterControl">
+            <input class="searchbar" type="text" placeholder="filter..." [formControl]="empService.filterControl">
         </form>
         <div class="">
             <button (click)="addEmp()"><i class="fa-solid fa-user-plus"></i></button>
         </div>
     </div>
-    <app-emp-tile *ngFor="let user of empService.users" [currentUser]="user"></app-emp-tile>
+    <app-emp-tile *ngFor="let user of empService.filteredUsers" [currentUser]="user"></app-emp-tile>
 </div>

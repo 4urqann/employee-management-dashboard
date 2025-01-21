@@ -18,25 +18,21 @@ export class HomeComponent implements OnInit {
 
   baseURL: string = "http://localhost:3000/users";
 
-  @Input() filterControl: FormControl = new FormControl('');
+  // @Input() filterControl: FormControl = new FormControl('');
 
-  // users:User[] = this.empService.users;
-  filteredUsers!: User[];
+  // filteredUsers!: User[];
   
   ngOnInit(): void {
-    // this.empService.getAllUsers();
 
-    this.filteredUsers = this.empService.users;
-    // console.log(this.users[4]);
-    
     this.empService.getAllUsers();
+    
 
-    this.filterControl.valueChanges.subscribe((currentValue: any) => {
+    this.empService.filterControl.valueChanges.subscribe((currentValue: any) => {
       console.log(currentValue);
       if (currentValue === '') {
-        this.filteredUsers = this.empService.users;
+        this.empService.filteredUsers = this.empService.users;
       } else {
-        this.filteredUsers = this.empService.users.filter((emp) => {
+        this.empService.filteredUsers = this.empService.users.filter((emp) => {
           return emp.name.toLowerCase().includes(currentValue.toLowerCase()) 
           || emp.username.toLowerCase().includes(currentValue.toLowerCase())
           || emp.department.toLowerCase().includes(currentValue.toLowerCase());
@@ -46,7 +42,8 @@ export class HomeComponent implements OnInit {
     });
 
     console.log("Home Loaded!!");
-
+    console.log(this.empService.filteredUsers);
+    
   }
 
   addEmp() {

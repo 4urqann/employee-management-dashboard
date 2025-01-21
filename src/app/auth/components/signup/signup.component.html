@@ -40,9 +40,9 @@
 
                 <div class="inputField">
                     <mat-form-field>
-                        <mat-label>Gender</mat-label>
-                        <mat-select>
-                            <mat-option formControlName="department" *ngFor="let department of departments" value="department">
+                        <mat-label>Department</mat-label>
+                        <mat-select formControlName="department" >
+                            <mat-option *ngFor="let department of departments" value="department">
                                 {{ department }}
                             </mat-option>
                         </mat-select>

@@ -1,6 +1,7 @@
 import { User } from './../auth/user';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, Input } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -15,16 +16,19 @@ export class EmployeeService {
 
   baseURL = "http://localhost:3000/users";
 
-  // filteredUsers!: User[];
+  filteredUsers!: User[];
   users!: User[];
+  
+  emp!: User;
 
-  employee!: User;
+  @Input() filterControl: FormControl = new FormControl('');
+
 
   getAllUsers() {
     this.http.get<User[]>(this.baseURL)
       .subscribe((users: User[]) => {
         this.users = users;
-        // this.filteredUsers = users;
+        this.filteredUsers = users;
       });
   }
 
@@ -37,7 +41,7 @@ export class EmployeeService {
     
     // this.router.navigate(['home', 'edit', id]);
     this.router.navigate(['home/edit']);
-    this.employee = user;
+    this.emp = user;
     
   }
 
